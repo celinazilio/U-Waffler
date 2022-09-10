@@ -10,17 +10,17 @@
     border-radius: 0.8rem;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
- body {
-    font-family: 'Poppins', sans-serif;
+ h1 {
+    font-weight: bolder;
+    color: #575652;
  }
-body {
 
+body {
+    font-family: 'Poppins';
     color: rgb(53, 51, 44);
     background-color: #f4c531;
     padding: 3em 2.8em;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 a {
@@ -37,23 +37,6 @@ a:hover {
 }
 
 
-a:hover {
-    color: rgb(53, 51, 44);
-}
-
-h3,
-h4 {
-    font-size: large;
-}
-
-h3 {
-    font-weight: lighter;
-}
-
-h4 {
-    font-weight: bold;
-}
-
 li:hover {
     width: 20%;
     border-radius: 3rem;
@@ -69,7 +52,9 @@ li:hover {
     background-color: #ffffff;
 }
 
-
+h3 {
+    font-size: medium;
+}
 /* BOTONES PERSONALIZACION*/
 button,
 label {
@@ -87,8 +72,8 @@ label {
     background-color: #bace4d;
 }
 
-.boton:hover {
-    background-color: #adeb74;
+.boton:hover  {
+    background-color: #adeb74 !important;
 }
 
 h5 {
@@ -102,4 +87,14 @@ h5 {
     height: 25px;
     color: white;
     background-color: rgb(173, 50, 46);
+}
+
+/* BOTONES PERSONALIZACION*/
+.formulario {
+    padding-top: 5rem;
+    height: 20rem;
+}
+
+.navAtras {
+    background-color: #c2806c;
 }
