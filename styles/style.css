@@ -10,6 +10,7 @@
     border-radius: 0.8rem;
     box-sizing: border-box;
 }
+
  h1 {
     font-weight: bolder;
     color: #575652;
@@ -17,10 +18,11 @@
 
 body {
     font-family: 'Poppins';
+    font-size: 22px;
     color: rgb(53, 51, 44);
     background-color: #f4c531;
     padding: 3em 2.8em;
-    font-size: 22px;
+
 }
 
 a {
