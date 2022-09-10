@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    border: none;
+    outline: none;
+    font-weight: normal;
+    list-style: none;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ body {
+    font-family: 'Poppins', sans-serif;
+ }
+body {
+
+    color: rgb(53, 51, 44);
+    background-color: #f4c531;
+    padding: 3em 2.8em;
+    font-size: 16px;
+}
+
+a {
+    font-weight: bolder;
+    color: rgb(53, 51, 44);
+}
+
+li:hover,
+a:hover {
+    color: rgb(85, 82, 73);
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+a:hover {
+    color: rgb(53, 51, 44);
+}
+
+h3,
+h4 {
+    font-size: large;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+li:hover {
+    width: 20%;
+    border-radius: 3rem;
+    background-color: #b4ac346e;
+}
+
+
+
+.container_contenido {
+    padding: 3em 2.8em;
+    width: 96vw;
+    max-width: 32em;
+    background-color: #ffffff;
+}
+
+
+/* BOTONES PERSONALIZACION*/
+button,
+label {
+    cursor: pointer;
+}
+
+.btn-delete {
+    background-color: #d9e8f0;
+}
+
+.btn-add,
+.boton {
+    padding: 0.4rem;
+    border-radius: 3rem;
+    background-color: #bace4d;
+}
+
+.boton:hover {
+    background-color: #adeb74;
+}
+
+h5 {
+    background-color: #f0b71c;
+    padding: 0.2rem;
+}
+
+.btn-delete {
+    border-radius: 3rem;
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: rgb(173, 50, 46);
+}
