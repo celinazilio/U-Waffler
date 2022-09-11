@@ -17,33 +17,28 @@
         <header>
             <h1>Waffler</h1>
             <h2>Una renovada lista de compras</h2>
-            <nav>
-                <ul>
-                    <li><a href="./b_inicio.html">Inicio</a></li>
-                    <li><a href="./c_lista.html">Lista</a></li>
-                    <li><a href="./d_recetas.html">Recetas</a></li>
-                    <li class="navAtras"><a href="./a_registro.html">Atrás</a></li>
-                </ul>
-            </nav>
+           
         </header>
         <main>
             <h3>Organizá tu <span>Waffler</span> y tené tu lista siempre al alcance de la mano</h3>
-            <section class="formulario">
 
+            <form action="./b_inicio.html" onsubmit="llamado()">
                 
-                <form method="POST" action="./b_inicio.html">
-                    <h4>¡Bienvenido/a! ¿Cual es tu nombre?</h4>
-                    <input id="pedirNombre" type="text" placeholder="Escribe tu nombre..." required>
-                    <button type="submit">Ingresar</button>
-                </form>
-
-            </section>
+              
+                <h4>¡Bienvenido/a! ¿Cual es tu nombre?</h4>
+                <input id="inputNombre" type="text" placeholder="Escribe tu nombre..." required>
+                <button type="submit" value="submit">Submit</button>
+        
+            </form>
         </main>
     </div>
 
-
+<!--
+     method="POST" action="./b_inicio.html"
+-->
 
     <!-- jsDelivr :: Libreria :: Boostrap-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <!--  SCRIPT -->
     <script src="./javascript/main.js"></script>

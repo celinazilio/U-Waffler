@@ -25,9 +25,14 @@ body {
 
 }
 
-li,
-a {
-    color: rgb(53, 51, 44);
+li {
+    width: 20%;
+    display: inline-block;
+}
+
+li a {
+    color: rgb(87, 85, 79);
+    font-weight: light;
     list-style: none;
     text-decoration: none;
     text-align: center;
@@ -45,10 +50,15 @@ span {
     font-style: italic;
 }
 
+input {
+    background-color: rgb(191, 200, 207);
+
+}
+
 li:hover {
     width: 20%;
     border-radius: 3rem;
-    background-color: #b4ac346e;
+    background-color: #f4c531;
 }
 
 .navAtras a {
@@ -60,7 +70,17 @@ li:hover {
 }
 
 .navAtras:hover a {
-    color: #b136266e;
+    color:  #f43131;
+}
+
+
+.navInicio:hover {
+    background-color: #ffffff;
+}
+
+.navInicio:hover a {
+    color: #f4c531;
+    ;
 }
 
 .container_contenido {

@@ -16,19 +16,30 @@
     <div class="container_contenido">
         <header>
             <h1>Waffler</h1>
-            <h2>¿Qué tienes en mente, <span  id="mostrar"></span>?</h2>
+            <h2>¿Qué tienes en mente<span id="bienvUsuario"> </span>?</h2>
             <p>¿Que haremos hoy?</p>
             <nav>
                 <ul>
-                    <li><a href="./b_inicio.html">Inicio</a></li>
+                    <li class="navInicio"><a href="./b_inicio.html" >Inicio</a></li>
+               
                     <li><a href="./c_lista.html">Lista</a></li>
                     <li><a href="./d_recetas.html">Recetas</a></li>
-                    <li class="navAtras"><a href="./a_registro.html">Atrás</a></li>
+                  
                 </ul>
             </nav>
         </header>
 
-        <main class="tareasListaGrupo">
+        <div class="container">
+            <div id="newtask">
+                <input type="text" placeholder="Task to be done..">
+                <button id="push">Add</button>
+            </div>
+            <div id="tasks"></div>
+        </div>
+
+
+
+        <section class="tareasListaGrupo">
             <div class="tareasLista">
                 <input type="text" class="textContent contentCard" value="Almacén 🧂">
 
@@ -69,11 +80,12 @@
 
                 <input type="text" id="tareasTarjeta" class="textContent buttonCard " placeholder="Agregar producto...">
             </div>
-        </main>
+        </section>
 
     </div>
 
     <!-- jsDelivr :: Libreria :: Boostrap-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <!--  SCRIPT -->
     <script src="./javascript/main.js"></script>
