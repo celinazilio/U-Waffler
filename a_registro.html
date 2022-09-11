@@ -19,9 +19,9 @@
             <h2>Una renovada lista de compras</h2>
             <nav>
                 <ul>
-                    <li><a href="./b_inicio.html">Lista</a></li>
-                    <li><a href="./c_lista.html">Recetas</a></li>
-                    <li><a href="./d_recetas.html">Inicio</a></li>
+                    <li><a href="./b_inicio.html">Inicio</a></li>
+                    <li><a href="./c_lista.html">Lista</a></li>
+                    <li><a href="./d_recetas.html">Recetas</a></li>
                     <li class="navAtras"><a href="./a_registro.html">Atrás</a></li>
                 </ul>
             </nav>
@@ -29,14 +29,14 @@
         <main>
             <h3>Organizá tu <span>Waffler</span> y tené tu lista siempre al alcance de la mano</h3>
             <section class="formulario">
-                <h4>¡Bienvenido/a! ¿Cual es tu nombre?</h4>
-              <form>
-                <fieldset>
-                    <label for="nombre">Escribe tu nombre...</label>
-                    <input type="text" id="nombre"/>
-                    <button type="button" onclick="saludo()">Enviar</button>
-                </fieldset>
-              </form>
+
+                
+                <form method="POST" action="./b_inicio.html">
+                    <h4>¡Bienvenido/a! ¿Cual es tu nombre?</h4>
+                    <input id="pedirNombre" type="text" placeholder="Escribe tu nombre..." required>
+                    <button type="submit">Ingresar</button>
+                </form>
+
             </section>
         </main>
     </div>
