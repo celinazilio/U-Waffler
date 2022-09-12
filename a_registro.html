@@ -5,41 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<!-- CSS Import -->
+        <link rel="stylesheet" href="./styles/style.css">
+    	<!-- End of CSS Import -->
     <link rel="shortcut icon" href="./styles/tortita.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Registro | Tu Lista de Mercado</title>
+    <title>Waffler | 🧇</title>
 </head>
 
 <body class="container_todo">
     <div class="container_contenido">
         <header>
-            <h1>Waffler</h1>
+            <h1>Waffler 🧇</h1>
             <h2>Una renovada lista de compras</h2>
-           
         </header>
         <main>
-            <h3>Organizá tu <span>Waffler</span> y tené tu lista siempre al alcance de la mano</h3>
+            <h3>Organizá tu <span>Waffler 🧇</span> y tené tu lista siempre al alcance de la mano</h3>
 
-            <form action="./b_inicio.html" onsubmit="llamado()">
-                
-              
-                <h4>¡Bienvenido/a! ¿Cual es tu nombre?</h4>
+            <form  method="POST" action="./b_inicio.html" onsubmit="llamado()">  
+                <h4>¡Bienvenido/a! 👋 ¿Cual es tu nombre?</h4>
                 <input id="inputNombre" type="text" placeholder="Escribe tu nombre..." required>
-                <button type="submit" value="submit">Submit</button>
-        
+                <button type="submit" class="btn" value="submit">Listo 👍</button>
             </form>
         </main>
     </div>
 
-<!--
-     method="POST" action="./b_inicio.html"
--->
 
-    <!-- jsDelivr :: Libreria :: Boostrap-->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <!--  SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./javascript/main.js"></script>
 </body>

@@ -5,89 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- End of CSS Import -->
     <link rel="shortcut icon" href="./styles/tortita.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Inicio | Tu Lista de Mercado</title>
+    <title>Lista | 🧇</title>
 </head>
 
 <body class="container_todo">
     <div class="container_contenido">
         <header>
-            <h1>Waffler</h1>
-            <h2>¿Qué tienes en mente<span id="bienvUsuario"> </span>?</h2>
-            <p>¿Que haremos hoy?</p>
+            <h1>Waffler 🧇</h1>
             <nav>
                 <ul>
-                    <li class="navInicio"><a href="./b_inicio.html" >Inicio</a></li>
-               
-                    <li><a href="./c_lista.html">Lista</a></li>
+                    <li class="navInicio"><a href="./b_inicio.html">🏠</a></li>
+                    <li><a href="#">Lista</a></li>
                     <li><a href="./d_recetas.html">Recetas</a></li>
-                  
                 </ul>
             </nav>
         </header>
+        <!-- Inicio -->
+        <main class="app">
+            <!-- Greeting -->
+            <h3>¿Qué necesitas en tu cocina<span id="welcome"></span>? 😉</h3>
+            <!-- End of Greeting -->
+            <!-- Categorias -->
+            <section class="create-todo">
+                <form id="new-todo-form">
+                    <input type="text" placeholder="Producto..." name="content" id="content" />
 
-        <div class="container">
-            <div id="newtask">
-                <input type="text" placeholder="Task to be done..">
-                <button id="push">Add</button>
-            </div>
-            <div id="tasks"></div>
-        </div>
-
-
-
-        <section class="tareasListaGrupo">
-            <div class="tareasLista">
-                <input type="text" class="textContent contentCard" value="Almacén 🧂">
-
-                <input type="text" id="tareasTarjeta" class="textContent buttonCard" placeholder="Agregar producto...">
-            </div>
-            <div class="tareasLista">
-                <input type="text" class="textContent contentCard" value="Bebidas 🍻">
-
-                <input type="text" id="tareasTarjeta" class="textContent buttonCard" placeholder="Agregar producto...">
-            </div>
-            <div class="tareasLista">
-                <input type="text" class="textContent contentCard" value="Limpieza y Perfumería🧼">
-
-                <input type="text" id="tareasTarjeta" class="textContent buttonCard " placeholder="Agregar producto...">
-            </div>
-            <div class="tareasLista">
-                <input type="text" class="textContent contentCard" value="Frutas y Verduras🥑">
-
-                <input type="text" id="tareasTarjeta" class="textContent buttonCard " placeholder="Agregar producto...">
-            </div>
-            <div class="tareasLista">
-                <input type="text" class="textContent contentCard" value="Congelados 🥩">
-
-                <input type="text" id="tareasTarjeta" class="textContent buttonCard" placeholder="Agregar producto...">
-            </div>
-            <div class="tareasLista">
-                <input type="text" class="textContent contentCard" value="Bazar 🍴">
-
-                <input type="text" id="tareasTarjeta" class="textContent buttonCard " placeholder="Agregar producto...">
-            </div>
-            <div class="tareasLista">
-                <input type="text" class="textContent contentCard" value="Mascotas 🐶">
-
-                <input type="text" id="tareasTarjeta" class="textContent buttonCard" placeholder="Agregar producto...">
-            </div>
-            <div class="tareasLista">
-                <input type="text" class="textContent contentCard" value="Panadería 🍞">
-
-                <input type="text" id="tareasTarjeta" class="textContent buttonCard " placeholder="Agregar producto...">
-            </div>
-        </section>
-
+                    <h4>Elige una categoría</h4>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="category" id="category1" value="business" />
+                            <span class="bubble business"></span>
+                            <div>Alimentos 🧁</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="category" id="category2" value="personal" />
+                            <span class="bubble personal"></span>
+                            <div>Bazar 🍴</div>
+                        </label>
+                    </div>
+                    <input type="submit" value="Agregar" />
+                </form>
+            </section>
+            <!-- Fin de Categorias -->
+            <!-- Changuito/Carrito-->
+            <section class="todo-list">
+                <h3>🛒</h3>
+                <div class="list" id="todo-list"></div>
+            </section>
+            <!-- Fin de Changuito/Carrito -->
+        </main>
+        <!-- Fin de Inicio -->
     </div>
 
-    <!-- jsDelivr :: Libreria :: Boostrap-->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!--  SCRIPT -->
+    <!--  JS Import  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./javascript/main.js"></script>
-
 </body>

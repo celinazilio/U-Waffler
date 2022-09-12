@@ -5,37 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- End of CSS Import -->
     <link rel="shortcut icon" href="./styles/tortita.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Inicio | Tu Lista de Mercado</title>
+    <title>Home | 🧇</title>
 </head>
 
 <body class="container_todo">
     <div class="container_contenido">
         <header>
-            <h1>Waffler</h1>
-            <h2>¡Hola<span id="bienvUsuario"> </span>! Estoy feliz de que estés aquí.</h2>
-            <p>¿Que haremos hoy?</p>
+            <h1>Waffler 🧇</h1>
             <nav>
                 <ul>
-                    <li  class="navInicio"><a href="./b_inicio.html">Inicio</a></li>
-                    
+                    <li class="navInicio"><a href="#">🏠</a></li>
                     <li><a href="./c_lista.html">Lista</a></li>
                     <li><a href="./d_recetas.html">Recetas</a></li>
-                    <br>
-                    <br>
-                    <li class="navAtras"><a href="./a_registro.html">Atrás</a></li>
+                    <li class="navAtras"><a href="./a_registro.html">🔙</a></li>
                 </ul>
             </nav>
         </header>
+        <main>
+            <h3>¡Hola<span id="bienvUsuario"></span>! Estoy feliz de que estés aquí 😊 </h3>
       
+            <div class="container">
+            
+                <div class="clock">
+                    <p>¿Que haremos hoy?</p>
+                    <p>¡Es un hermoso <span id="day"></span>✨!</p>
+                    <div class="wrapper">
+                        <div id="time"></div>
+                        <span id="midday"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 
-    <!-- jsDelivr :: Libreria :: Boostrap-->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!--  SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./javascript/main.js"></script>
 </body>
